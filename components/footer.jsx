@@ -18,10 +18,10 @@ const footer = () => {
       <h1 className="text-white    mt-2 md:mt-4 text-center font-[600] mx-[5%]">
         <span className=" font-bold">
           National Conference on Recent Trends in Climate Change, Energy and
-          Sustainability (NCRTCES) 2024
+          Sustainability (NCRTCES) 2026
         </span>{" "}
         <br />
-        <span className="text-[#FFD700]">Copyright © 2024 |</span>&nbsp;
+        <span className="text-[#FFD700]">Copyright © 2026 |</span>&nbsp;
         <span className="text-[#FFD700]">All Rights Reserved.</span>
       </h1>
       <div className="flex justify-center text-xl md:text-3xl py-4 md:mt-4 mb-4">

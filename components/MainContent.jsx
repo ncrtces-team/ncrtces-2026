@@ -18,11 +18,11 @@ const Main = () => {
   const slides = [
     { url: 'https://msit.in/media/2017/03/15/aboutmsit.png' },
     { url: 'https://images.squarespace-cdn.com/content/v1/5b9c8fb3c258b42748351a07/1597188834721-JRFYXCZIONFBUFUGUD6V/climate+change+women+gender+equality+action+1' },
-    { url: 'https://www.ece.fr/wp-content/uploads/sites/2/2024/04/42045_large.jpg?w=1200&h=630&crop=1' },
+    { url: 'https://www.ece.fr/wp-content/uploads/sites/2/2026/04/42045_large.jpg?w=1200&h=630&crop=1' },
     { url: 'https://news.sap.com/india/files/2022/08/09/sustainability-banner.jpg' },
   ];
 
-  const targetDate = "2024-11-11T00:00:00";
+  const targetDate = "2026-02-27T00:00:00";
 
   const customArrowStyles = {
     width: '32px',
@@ -77,13 +77,13 @@ const Main = () => {
                 </div>
                 <div>
                   <h1 className="font-semibold bg-gradient-to-t from-slate-900 to-slate-700 bg-clip-text text-transparent text-border event-title text-2xl sm:text-1xl md:text-2xl lg:text-3xl">
-                    National Conference on Recent Trends in Climate Change, Energy and Sustainability (NCRTCES-2024)
+                    National Conference on Recent Trends in Climate Change, Energy and Sustainability (NCRTCES-2026)
                   </h1>
                   <h1 className="name mt-5 font-bold gradient-text event-subtitle text-2xl sm:text-1xl md:text-2xl lg:text-3xl bg-clip-text text-transparent text-border">
                     Maharaja Surajmal Institute Of Technology.
                   </h1>
                   <h1 className=" mt-3 font-bold bg-gradient-to-r from-slate-50 to-zinc-300 bg-clip-text text-transparent text-border event-date text-2xl sm:text-1xl md:text-2xl lg:text-3xl">
-                    November 11th - 12th 2024
+                    February 27th - 28th 2026
                   </h1>
                 </div>
                 <div className="flex items-center justify-center">
