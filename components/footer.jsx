@@ -1,5 +1,3 @@
-import React from "react";
-
 const footer = () => {
   return (
     <footer className="w-full md:h-96 footer bg-gradient-to-t from-blue-500 to-blue-400 flex flex-col justify-evenly">

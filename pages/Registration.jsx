@@ -1,5 +1,3 @@
-import CopyableField from "../components/copyable";
-import qr from "../public/qr.jpg";
 const Registration = () => {
   return (
     <section id="reg">
