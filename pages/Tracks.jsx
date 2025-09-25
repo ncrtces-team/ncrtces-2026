@@ -36,72 +36,53 @@ const Tracks = () => {
   const tracks = [
     {
       id: "track1",
-      title: "Track I: Climate Change and Extreme Weather",
-      items: [
-        "Climate Management",
-        "Global Issues and Risk Assessment",
-        "Health And Environment",
-        "Pollution",
-        "Global Warming",
-      ],
+      title: "Track I: Climate Change, Extreme Events, and Risk Management",
+      items: ["Climate Change", "Extreme Events", "Risk Management"],
     },
     {
       id: "track2",
-      title: "Track II: Energy",
+      title:
+        "Track II: Advanced Weather Forecasting, Remote Sensing, and Data Management",
       items: [
-        "Energy Economics",
-        "Energy Efficiency",
-        "Energy Utilization",
-        "Smart Grids",
-        "Energy Data Analytics",
+        "Advanced Weather Forecasting",
+        "Remote Sensing",
+        "Data Management",
       ],
     },
     {
       id: "track3",
-      title: "Track III: Weather Forecasting & Information Management",
+      title:
+        "Track III: Carbon Neutrality, Net Zero Pathways, Low-Carbon Innovations, and Emerging Technologies",
       items: [
-        "Generalisation of Ensemble Forecasts",
-        "History of weather forecasting",
-        "Modern methods of weather forecasting",
-        "Numerical Prediction of Weather",
-        "Use of forecast models",
+        "Carbon Neutrality",
+        "Net Zero Pathways",
+        "Low-Carbon Innovations",
+        "Emerging Technologies",
       ],
     },
     {
       id: "track4",
-      title: "Track IV: Sustainability",
-      items: [
-        "Climate Change",
-        "Carbon Footprint",
-        "Sustainable Development",
-        "Sustainable Buildings",
-        "Waste Management and Recycling",
-      ],
+      title: "Track IV: Climate Modelling, Simulation, and Big Data Analytics",
+      items: ["Climate Modelling", "Simulation", "Big Data Analytics"],
     },
     {
       id: "track5",
-      title: "Track V: Artificial Intelligence & Machine Learning",
+      title:
+        "Track V: Smart Energy Systems, Sustainable Power Management, and Computational Intelligence",
       items: [
-        "Green and Sustainable AI",
-        "Smart City",
-        "Predictive Models for Climate Monitoring",
-        "ML & DL for Energy optimization",
-        "Intelligent Smart Technology for Sustainability",
+        "Smart Energy Systems",
+        "Sustainable Power Management",
+        "Computational Intelligence",
       ],
     },
     {
       id: "track6",
-      title: "Special Session Proposal",
+      title:
+        "Track VI: Artificial Intelligence, Machine Learning, and Data-Driven Sustainability",
       items: [
-        `1.  Special Session On Holistic Climate Resilience for Agriculture and Health Systems `,
-        "SESSION ORGANIZERS:",
-        "Dr. Varuna Gupta, CHRIST University, Delhi-NCR, India, varunagupta.cs@gmail.com",
-        "Dr. Aakansha Garg, ABES Institute of Technology, Ghaziabad, India, aakansha1986@gmail.com ",
-        "2.  Special Session On AI for Global Sustainable Development",
-        "SESSION ORGANIZERS:",
-        " Dr. Megha Rathi, Department of CSE & IT, Jaypee Institute of Information Technology, Noida, INDIA , drmegharathi.25@gmail.com",
-        " Dr. Adwitiya Sinha, Department of Natural and Applied Sciences, TERI School of Advanced Studies, New Delhi, INDIA, mailtoadwitiya@gmail.com ",
-        `3. Special Session Form`,
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data-Driven Sustainability",
       ],
     },
   ];
@@ -118,11 +99,11 @@ const Tracks = () => {
           </div>
           <div className="flex flex-col md:flex-row md:space-x-8 m-5">
             <div className="w-full md:w-[300px] relative flex">
-              <ul className="space-y-2 flex flex-col justify-around">
+              <ul className="space-y-2 flex flex-col justify-around px-2">
                 {tracks.map((track) => (
                   <li key={track.id} className="relative">
                     <button
-                      className={`hover:text-white focus:text-white w-full bg-gray-200 text-left pl-3 py-2 rounded-md font-medium hover:bg-gray-500 focus:outline-none focus:bg-gray-500 md:w-[190px] lg:w-full border border-borderColor ${
+                      className={`hover:text-white focus:text-white w-full bg-gray-200 text-left pl-3 py-2 rounded-md hover:bg-gray-500 focus:outline-none focus:bg-gray-500 md:w-[190px] lg:w-full border border-borderColor ${
                         activeTrack === track.id ? "bg-gray-500 text-white" : ""
                       }`}
                       onClick={() => toggleDropdown(track.id)}
@@ -145,34 +126,17 @@ const Tracks = () => {
                               : ""
                           }`}
                         >
-                          {!item.includes("SESSION ORGANIZERS:") &&
-                            !item.includes("Special Session Form") &&
-                            !item.includes("Special Session On") && (
-                              <span className="inline-block w-2 h-2 bg-[#365372] rounded-full mr-2 shrink-0"></span>
-                            )}
-                          {item.includes("Special Session Form") ? (
-                            <a
-                              href="https://docs.google.com/document/d/1bQWRXwvZHXI2W7n2puQyfSy84YMTAQl3/edit?usp=drivesdk&ouid=107939780468160870267&rtpof=true&sd=true"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-semibold hover:text-blue-400"
-                              style={{ whiteSpace: "pre-wrap" }}
-                            >
-                              3. <span className="text-red-600">Special Session Form</span>
-                            </a>
-                          ) : (
-                            <span
-                              className="font-semibold"
-                              style={{ whiteSpace: "pre-wrap" }}
-                              dangerouslySetInnerHTML={{
-                                __html: item.replace(
-                                  /Special Session/g,
-                                  (match) =>
-                                    `<span class="text-red-600">${match}</span>`
-                                ),
-                              }}
-                            ></span>
-                          )}
+                          <span
+                            className="font-semibold"
+                            style={{ whiteSpace: "pre-wrap" }}
+                            dangerouslySetInnerHTML={{
+                              __html: item.replace(
+                                /Special Session/g,
+                                (match) =>
+                                  `<span class="text-red-600">${match}</span>`
+                              ),
+                            }}
+                          ></span>
                         </li>
                       ))}
                     </ul>
@@ -188,43 +152,21 @@ const Tracks = () => {
                       {track.items.map((item, index) => (
                         <li
                           key={index}
-                          className={`py-2 text-black pl-2 flex items-center transition-all duration-200 hover:bg-gray-100 rounded-md cursor-pointer ${
-                            item.startsWith("1.") || item.startsWith("2.") || item.startsWith("3.")
-                              ? "pl-4"
-                              : ""
-                            }
-                          ${
-                            item.startsWith("SESSION ORGANIZERS:") ? "font-semibold text-red-600 bg-yellow-100 p-1 rounded" : ""
-                          }`}
+                          className={`py-2 text-black pl-2 flex items-center transition-all duration-200 hover:bg-gray-100 rounded-md cursor-pointer`}
                         >
-                          {!item.includes("SESSION ORGANIZERS:") &&
-                            !item.includes("Special Session Form") &&
-                            !item.includes("Special Session On") && (
-                              <span className="inline-block w-2 h-2 bg-[#365372] rounded-full mr-2 shrink-0"></span>
-                            )}
-                          {item.includes("Special Session Form") ? (
-                            <a
-                              href="https://docs.google.com/document/d/1bQWRXwvZHXI2W7n2puQyfSy84YMTAQl3/edit?usp=drivesdk&ouid=107939780468160870267&rtpof=true&sd=true"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-semibold "
-                              style={{ whiteSpace: "pre-wrap" }}
-                            >
-                              3. <span className="text-blue-600 hover:text-blue-400 underline">Special Session Form</span>
-                            </a>
-                          ) : (
-                            <span
-                              className="font-semibold"
-                              style={{ whiteSpace: "pre-wrap" }}
-                              dangerouslySetInnerHTML={{
-                                __html: item.replace(
-                                  /Special Session/g,
-                                  (match) =>
-                                    `<span class="text-blue-600">${match}</span>`
-                                ),
-                              }}
-                            ></span>
-                          )}
+                          <span className="inline-block w-2 h-2 bg-[#365372] rounded-full mr-2 shrink-0"></span>
+
+                          <span
+                            className="font-semibold"
+                            style={{ whiteSpace: "pre-wrap" }}
+                            dangerouslySetInnerHTML={{
+                              __html: item.replace(
+                                /Special Session/g,
+                                (match) =>
+                                  `<span class="text-blue-600">${match}</span>`
+                              ),
+                            }}
+                          ></span>
                         </li>
                       ))}
                     </ul>
@@ -239,26 +181,3 @@ const Tracks = () => {
 };
 
 export default Tracks;
-
-{
-  /* Special Session Button with href */
-}
-
-{
-  /* <a
-                    href="https://docs.google.com/document/d/1bQWRXwvZHXI2W7n2puQyfSy84YMTAQl3/edit?usp=drivesdk&ouid=107939780468160870267&rtpof=true&sd=true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full"
-                  > */
-}
-{
-  /* <button className="w-full bg-gradient-to-r from-blue-300 to-blue-400 p-1 rounded-md">
-                      <div className="bg-blue-500 text-white rounded-md py-2 font-medium hover:bg-blue-600 focus:outline-none">
-                        Special Session
-                      </div>
-                    </button> */
-}
-{
-  /* </a> */
-}

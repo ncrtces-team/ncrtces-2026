@@ -1,10 +1,8 @@
-import CopyableField from "../components/copyable";
-import qr from '../public/qr.jpg'
 const Registration = () => {
   return (
     <section id="reg">
       <div className="h-8 w-full "></div>
-      <div className="w-full min-h-80">
+      <div className="w-full ">
         <div className="bg-white px-[5%] md:px-[15%]">
           <div>
             <h1 className="text-[#c00000] pt-16 text-center text-3xl font-[600]">
@@ -13,16 +11,15 @@ const Registration = () => {
             <div className="w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl"></div>
             <div className="h-12 bg-white w-full"></div>
           </div>
-          <br />
+          <h2 className="text-center">To be announced soon...</h2>
+          {/* <br />
           <div className="w-full max-w-3xl mx-auto">
-            {/* Category Section */}
             <div className="flex text-md md:text-xl text-white bg-blue-400 font-[500]">
               <div className="w-1/2 text-center py-3">Category</div>
               <div className="w-1 h-auto border-r-2 border-white"></div>
               <div className="w-1/2 text-center py-3">INR</div>
             </div>
 
-            {/* Fees Section */}
             {[
               { category: "Student/Research Scholar", fee: "1,500" },
               { category: "Academic/Faculty", fee: "3,000", bg: "bg-[#e9e9e9]" },
@@ -44,7 +41,6 @@ const Registration = () => {
           </h2>
           <div className="w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl mb-16"></div>
 
-          {/* Fee Includes Section */}
           <ul className="list-disc pl-5 text-md md:text-lg font-medium leading-relaxed space-y-2">
             {[
               "Access to Keynote talks",
@@ -75,7 +71,6 @@ const Registration = () => {
             </p>
 
             <div className="mt-6 p-4 bg-white rounded-lg shadow-sm border">
-              {/* Bank Details */}
               {[
                 { label: "Account Holder", value: "Director, Maharaja Surajmal Institute of Technology" },
                 { label: "Address", value: "Maharaja Surajmal Institute, C4, Janakpuri, New Delhi - 110058" },
@@ -91,7 +86,7 @@ const Registration = () => {
             <p className="text-md md:text-lg text-center font-medium mt-6">
               Ensure to include your full name and registration category while making the payment.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
