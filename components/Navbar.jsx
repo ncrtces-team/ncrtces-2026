@@ -14,11 +14,11 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Link as ScrollLink, scroller, Events } from "react-scroll";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-// import Logo from './Logo.jpg';
+// import Logo from './Logo.png';
 import "./navbar.css";
 
 const pages = [
@@ -75,8 +75,8 @@ function ResponsiveAppBar() {
       smooth: true,
     });
   };
-  const handleNew = () =>{
-    <Link to="https://docs.google.com/document/d/1cP5ofNbdWMGT1xofUB_XkenpVttwWz0I/edit"></Link>
+  const handleNew = () => {
+    <Link to="https://docs.google.com/document/d/1cP5ofNbdWMGT1xofUB_XkenpVttwWz0I/edit"></Link>;
   };
 
   React.useEffect(() => {
@@ -87,8 +87,8 @@ function ResponsiveAppBar() {
 
   React.useEffect(() => {
     // Select the guide section by its ID
-    const guideSection = document.getElementById('guide');
-  
+    const guideSection = document.getElementById("guide");
+
     // Create an IntersectionObserver instance to monitor the visibility of the guide section
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -106,12 +106,12 @@ function ResponsiveAppBar() {
         threshold: 0.1, // 10% visibility triggers the callback (adjust this value as needed)
       }
     );
-  
+
     // Start observing the guide section
     if (guideSection) {
       observer.observe(guideSection);
     }
-  
+
     // Cleanup the observer when the component unmounts to prevent memory leaks
     return () => {
       if (guideSection) {
@@ -121,8 +121,8 @@ function ResponsiveAppBar() {
   }, []); // Empty dependency array ensures this effect runs only once when the component mounts
   React.useEffect(() => {
     // Select the guide section by its ID
-    const guideSection = document.getElementById('guide');
-  
+    const guideSection = document.getElementById("guide");
+
     // Create an IntersectionObserver instance to monitor the visibility of the guide section
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -140,12 +140,12 @@ function ResponsiveAppBar() {
         threshold: 0.1, // 10% visibility triggers the callback (adjust this value as needed)
       }
     );
-  
+
     // Start observing the guide section
     if (guideSection) {
       observer.observe(guideSection);
     }
-  
+
     // Cleanup the observer when the component unmounts to prevent memory leaks
     return () => {
       if (guideSection) {
@@ -153,8 +153,6 @@ function ResponsiveAppBar() {
       }
     };
   }, []); // Empty dependency array ensures this effect runs only once when the component mounts
-    
-  
 
   React.useEffect(() => {
     const handleSetActive = (to) => {
@@ -164,7 +162,6 @@ function ResponsiveAppBar() {
         setGuidelinesActive(false);
       }
     };
-    
 
     Events.scrollEvent.register("begin", handleSetActive);
     Events.scrollEvent.register("end", handleSetActive);
@@ -209,22 +206,29 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page.name}
-                component={page.sname !== "guide" ? ForwardedScrollLink : page.sname === "call" ? handleNew : ""}
+                component={
+                  page.sname !== "guide"
+                    ? ForwardedScrollLink
+                    : page.sname === "call"
+                    ? handleNew
+                    : ""
+                }
                 to={page.sname !== "guide" ? page.sname : null}
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={page.sname === "about" || "track"
-                  ? 0
-                  : page.sname === "reg" || "schedule"
+                offset={
+                  page.sname === "about" || "track"
+                    ? 0
+                    : page.sname === "reg" || "schedule"
                     ? -20
                     : page.sname === "contact"
-                      ? -10
-                      : page.sname === "committee"
-                      ? -15
-                        : page.sname === "cfp" 
-                          ? 0
-                            : -50
+                    ? -10
+                    : page.sname === "committee"
+                    ? -15
+                    : page.sname === "cfp"
+                    ? 0
+                    : -50
                 }
                 activeClass={page.sname !== "guide" ? "active" : ""}
                 // {...page.sname==="call" ? <Link to="https://github.com/"></Link>: ""}
@@ -240,14 +244,18 @@ function ResponsiveAppBar() {
                   position: "relative",
                 }}
                 onClick={page.sname === "guide" ? handleGuidelinesClick : null}
-                className={guidelinesActive && page.sname === "guide" ? "active" : ""}
+                className={
+                  guidelinesActive && page.sname === "guide" ? "active" : ""
+                }
               >
                 {page.name}
                 {page.sname === "guide" && (
                   <ArrowDropDownIcon
                     sx={{
                       ml: 1,
-                      transform: guidelinesMenuOpen ? "rotate(180deg)" : "rotate(0deg)",
+                      transform: guidelinesMenuOpen
+                        ? "rotate(180deg)"
+                        : "rotate(0deg)",
                       transition: "transform 200ms ease-in",
                     }}
                   />
@@ -367,50 +375,54 @@ function ResponsiveAppBar() {
         open={guidelinesMenuOpen}
         onClose={handleMenuClose}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
+          vertical: "bottom",
+          horizontal: "left",
         }}
         sx={{
-          '& .MuiPaper-root': {
-            background: "linear-gradient(162deg, rgba(75,67,193,0.9809173669467787) 0%, rgba(58,58,194,1) 32%, rgba(58,110,195,1) 56%)",
+          "& .MuiPaper-root": {
+            background:
+              "linear-gradient(162deg, rgba(75,67,193,0.9809173669467787) 0%, rgba(58,58,194,1) 32%, rgba(58,110,195,1) 56%)",
             mt: 2,
           },
-          "& .MuiMenu-list": { //dropdwon list container
+          "& .MuiMenu-list": {
+            //dropdwon list container
             padding: "10px",
           },
-          "& .MuiMenuItem-root": { //li item
-          backdropFilter: "blur(10px)",
-          color: "white",
-          fontWeight: "400",
-          borderRadius: "8px",
-          margin: "0 2px",
-          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-          borderRadius: "4px",
+          "& .MuiMenuItem-root": {
+            //li item
+            backdropFilter: "blur(10px)",
+            color: "white",
+            fontWeight: "400",
+            borderRadius: "8px",
+            margin: "0 2px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            borderRadius: "4px",
             "&:hover": {
               backgroundColor: "rgba(255, 255, 255, 0.1)",
             },
           },
         }}
       >
-    
         <MenuItem
-           component={ForwardedScrollLink}
-           to="submission-guideline"
-           spy={true}
-           smooth={true}
-           duration={500}
-           activeClass="active"
-          onClick={() => handleMenuItemClick("submission-guideline")}>
+          component={ForwardedScrollLink}
+          to="submission-guideline"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          onClick={() => handleMenuItemClick("submission-guideline")}
+        >
           Submission Guideline
         </MenuItem>
         <MenuItem
-           component={ForwardedScrollLink}
-           to="author-guideline"
-           spy={true}
-           smooth={true}
-           duration={500}
-           activeClass="active"
-          onClick={() => handleMenuItemClick("author-guideline")}>
+          component={ForwardedScrollLink}
+          to="author-guideline"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          onClick={() => handleMenuItemClick("author-guideline")}
+        >
           Author Guideline
         </MenuItem>
       </Menu>
