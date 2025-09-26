@@ -24,7 +24,7 @@ const cfp = () => {
               Paper submission Deadline
             </div>
             <div className="w-1 h-auto border-r-2 border-[#e9e9e9]"></div>
-            <div className="w-1/2 text-center py-3">December 10, 2026</div>
+            <div className="w-1/2 text-center py-3">December 10, 2025</div>
           </div>
           <div className="flex text-md md:text-xl bg-[#e9e9e9]">
             <div className="w-1/2 text-center py-3">
