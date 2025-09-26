@@ -46,63 +46,27 @@ const Committee = () => {
     {
       id: "advisory",
       members: [
+        { name: "Prof. Ashutosh Kr. Singh, Director IIIT Bhopal, India" },
+        { name: "Prof. Gulshan Dhamija, COE, GGSIPU, India" },
+        { name: "Prof. Pankaj Lathar, COE, DSEU, Delhi, India" },
+        { name: "Prof. Vishal Bhatnagar, NSUT, Delhi, India" },
+        { name: "Prof. Joan Lu, University of Huddersfield, UK" },
+        { name: "Prof. Qiang Xu, University of Huddersfield, UK" },
+        { name: "Prof. Rama Krishna, NITTTR Chandigarh" },
+        { name: "Prof. D.S. Khushwa, MNIT Allahabad" },
+        { name: "Dr. Latesh Mallick, Govt. College of Engg., Nagpur" },
+        { name: "Prof. Tejbir Rana, Delhi University" },
         {
-          name: "Dr. Arun Kumar Tripathi, Former DG National Institute Solar Energy, Ministry of New and Renewable Energy",
+          name: "Prof. Sachinandan Mohanty, SCOPE, VIT-AP University, Andhra Pradesh, India",
         },
-        { name: "Dr. R. Krishnan, Director IITM, Pune" },
-        { name: "Dr. Purnima Jalihal, Scientist G, NIOT Chennai" },
-        { name: "Dr. V.S. Prasad, Director, NCMRWF, Noida" },
+        { name: "Prof. Manish Kumar, IIIT Allahabad, India" },
+        { name: "Prof. Shailender Kumar, DTU, Delhi, India" },
         {
-          name: "Dr. Jagvir Singh, Scientist G, Ministry of Earth Sciences, New Delhi",
+          name: "Prof. Vishal Goyal, Punjabi University, Patiala, Punjab, India",
         },
-        {
-          name: "Prof. Prem Vrat, Pro-Chancellor; Professor of Eminence and Chief Mentor, The NorthCap University",
-        },
-        {
-          name: "Prof. Ved Prakash Former Chairman University Grant Commission ",
-        },
-        {
-          name: "Dr. Sanjay Yadav, Chief Scientist (Former), National Physical Laboratory",
-        },
-        {
-          name: "Prof. Saroj Kaushik Department of computer science & Engineering IIT, Delhi",
-        },
-        { name: "Prof. K.K. Aggarwal, Former VC, IP University, India" },
-        { name: "Prof. Amit Prakash, GGSIPU, New Delhi" },
-        { name: "Dr. Darshana Hooda, DCRUST, Haryana" },
-        { name: "Prof. Rajendra Singh, IIT Delhi" },
-        { name: "Prof. Narender Kumar, DTU, Delhi" },
-        { name: "Prof. J.S Lather, NIT, Kurukshetra" },
-        { name: "Dr. Kiran Gulia, University of Wolverhampton, UK" },
-        {
-          name: "Sumita Singh, Senior Vice President and General Manager, Health, U.S. News & World Report",
-        },
-        {
-          name: "Dr. Vijender Singh Professor, Department of instrumentation and Control Engineering, NSUT, Delhi ",
-        },
-        {
-          name: "Dr. Tejbir Singh Rana Associate Professor Shivaji College, University of Delhi ",
-        },
-        {
-          name: "Prof. Devi Singh Former Director, IIM Lucknow and MDI Gurgaon Founding Vice Chancellor, FLAME University, Pune",
-        },
-        {
-          name: "Dr. N.K. Gupta Member, National Executive Council ISTE, Delhi ",
-        },
-        {
-          name: "Prof. S.D. Joshi Department of Electrical Engineering IIT, Delhi ",
-        },
-        { name: "Dr. Sushil Chandra Former Scientist ‘G’, DRDO" },
-        {
-          name: "Dr. T.V. Vijay Kumar Professor, School of Computer &Systems JNU, Delhi",
-        },
-        {
-          name: "Dr. Anushree Malik Professor, Centre for Rural Development and Technology, Indian Institute of Technology (IIT) Delhi",
-        },
-        {
-          name: "Sh. Rajdeep Verma, Senior officer (S&M), National Science Centre, Delhi",
-        },
-        { name: "Darshan Malik, Associate Professor, University of Delhi" },
+        { name: "Prof. Mukesh Kumar, UIET, Chandigarh, Punjab, India" },
+        { name: "Dr. Deepak Kumar Sharma, IGDTUW, India" },
+        { name: "Prof. Prateek Agrawal, SGT University, Haryana, India" },
       ],
     },
   ];
