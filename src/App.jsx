@@ -10,6 +10,7 @@ import Registration from "../pages/Registration";
 import CallForPapers from "../pages/callforpapers";
 import Contact from "../pages/Contact";
 import Venue from "../pages/Venue";
+import Acknowledgements from "../pages/Acknowledgements";
 import Footer from "../components/footer";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <Guidelines />
       <Schedule />
       <Registration />
+      <Acknowledgements />
       <Contact />
       <Venue />
       <Footer />

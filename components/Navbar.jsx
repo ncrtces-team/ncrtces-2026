@@ -30,6 +30,7 @@ const pages = [
   { name: "Guidelines", sname: "guide" },
   { name: "Schedule", sname: "schedule" },
   { name: "Registration", sname: "reg" },
+  { name: "Acknowledgements", sname: "acknowledgements" },
   // { name: "Call For Special Session", sname: "call"},
   { name: "Contact Us", sname: "contact" },
   { name: "Venue", sname: "venue" },
@@ -40,6 +41,8 @@ const ForwardedScrollLink = React.forwardRef((props, ref) => (
     <ScrollLink {...props} />
   </div>
 ));
+
+ForwardedScrollLink.displayName = "ForwardedScrollLink";
 
 function ResponsiveAppBar() {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -218,9 +221,9 @@ function ResponsiveAppBar() {
                 smooth={true}
                 duration={500}
                 offset={
-                  page.sname === "about" || "track"
+                  page.sname === "about" || page.sname === "track"
                     ? 0
-                    : page.sname === "reg" || "schedule"
+                    : page.sname === "reg" || page.sname === "schedule"
                     ? -20
                     : page.sname === "contact"
                     ? -10
@@ -396,7 +399,6 @@ function ResponsiveAppBar() {
             borderRadius: "8px",
             margin: "0 2px",
             boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-            borderRadius: "4px",
             "&:hover": {
               backgroundColor: "rgba(255, 255, 255, 0.1)",
             },
