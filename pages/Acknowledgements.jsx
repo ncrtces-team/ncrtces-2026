@@ -13,7 +13,7 @@ const Acknowledgements = () => {
           </div>
 
           <div className="max-w-4xl mx-auto pb-16">
-            <p className="text-md md:text-lg leading-relaxed text-gray-700 text-justify">
+            <p className="leading-tight text-[11px] font-sans break-words text-gray-700 text-justify">
               The Microsoft CMT service was used for managing the peer-reviewing
               process for this conference. This service was provided for free by
               Microsoft and they bore all expenses, including costs for Azure
