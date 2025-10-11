@@ -87,11 +87,11 @@ const Guide = () => {
                 <br />
                 8. All papers must be submitted via the link:{" "}
                 <a
-                  href="https://cmt3.research.microsoft.com/NCRTCES2026"
+                  href="https://cmt3.research.microsoft.com/NCRTCES2026/Submission/Index"
                   className="text-blue-200 break-words underline hover:text-blue-100"
                 >
                   <br />
-                  https://cmt3.research.microsoft.com/NCRTCES2026
+                  https://cmt3.research.microsoft.com/NCRTCES2026/Submission/Index
                 </a>
               </p>
             </div>
