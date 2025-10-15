@@ -10,10 +10,10 @@ import Registration from "../pages/Registration";
 import CallForPapers from "../pages/callforpapers";
 import Contact from "../pages/Contact";
 import Venue from "../pages/Venue";
-import Acknowledgements from "../pages/Acknowledgements";
+// import Acknowledgements from "../pages/Acknowledgements";
 import Footer from "../components/footer";
 
-const App = () => {
+export const PreAckApp = () => {
   return (
     <>
       <Navbar />
@@ -26,12 +26,16 @@ const App = () => {
       <Guidelines />
       <Schedule />
       <Registration />
-      <Acknowledgements />
+    </>
+  );
+};
+
+export const PostAckApp = () => {
+  return (
+    <>
       <Contact />
       <Venue />
       <Footer />
     </>
   );
 };
-
-export default App;
