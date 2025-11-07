@@ -32,57 +32,84 @@ const Tracks = () => {
       window.removeEventListener("resize", updateActiveTrack);
     };
   }, []);
-
   const tracks = [
     {
       id: "track1",
-      title: "Track I: Climate Change, Extreme Events, and Risk Management",
-      items: ["Climate Change", "Extreme Events", "Risk Management"],
+      title: "Climate Change and Extreme Weather ",
+      items: [
+        "Climate variability, adaptation, and mitigation strategies",
+        "Impact of extreme weather events on ecosystems and infrastructure",
+        "Climate change modelling and prediction techniques",
+        "Risk assessment frameworks for climate-induced disasters",
+        "Hydrological extremes: floods, droughts, and cyclones",
+        "Policies, governance, and resilience planning for climate adaptation",
+        "Computer Science sub-track: Simulation tools and data-driven climate analysis",
+      ],
     },
     {
       id: "track2",
-      title:
-        "Track II: Advanced Weather Forecasting, Remote Sensing, and Data Management",
+      title: "Track II: Energy",
       items: [
-        "Advanced Weather Forecasting",
-        "Remote Sensing",
-        "Data Management",
+        "Renewable and clean energy technologies",
+        "Energy efficiency and conservation methods",
+        "Smart grids and distributed energy systems",
+        "Energy economics, policy, and sustainability",
+        "Greenhouse gas emissions and carbon capture technologies",
+        "Integration of AI, IoT, and cloud computing in energy systems",
+        "Computer Science sub-track: Energy data analytics and optimization algorithms",
       ],
     },
     {
       id: "track3",
-      title:
-        "Track III: Carbon Neutrality, Net Zero Pathways, Low-Carbon Innovations, and Emerging Technologies",
+      title: "Track III: Weather Forecasting & Information Management",
       items: [
-        "Carbon Neutrality",
-        "Net Zero Pathways",
-        "Low-Carbon Innovations",
-        "Emerging Technologies",
+        "Numerical weather prediction models",
+        "Remote sensing and satellite data applications",
+        "Ensemble forecasting and uncertainty quantification",
+        "Big data management in meteorology",
+        "Real-time data visualization and dissemination systems",
+        "Cloud-based and edge computing solutions for weather data",
+        "Computer Science sub-track: Machine learning approaches for forecasting accuracy",
       ],
     },
     {
       id: "track4",
-      title: "Track IV: Climate Modelling, Simulation, and Big Data Analytics",
-      items: ["Climate Modelling", "Simulation", "Big Data Analytics"],
+      title: "Track IV: Sustainability",
+      items: [
+        "Sustainable development and low-carbon innovations",
+        "Circular economy and waste management",
+        "Environmental impact assessment and lifecycle analysis",
+        "Water, food, and energy nexus",
+        "Sustainable urban planning and smart cities",
+        "Green computing and sustainable ICT practices",
+        "Computer Science sub-track: Data-driven decision support systems for sustainability",
+      ],
     },
     {
       id: "track5",
-      title:
-        "Track V: Smart Energy Systems, Sustainable Power Management, and Computational Intelligence",
+      title: "Track V: Artificial Intelligence & Machine Learning",
       items: [
-        "Smart Energy Systems",
-        "Sustainable Power Management",
-        "Computational Intelligence",
+        "AI models for environmental and climate applications",
+        "Deep learning for satellite image analysis",
+        "Predictive analytics for disaster management",
+        "Reinforcement learning in energy optimization",
+        "Hybrid AI models for environmental forecasting",
+        "Ethical AI and explainability in environmental applications",
+        "Computer Science sub-track: High-performance computing and algorithmic efficiency",
       ],
     },
     {
       id: "track6",
       title:
-        "Track VI: Artificial Intelligence, Machine Learning, and Data-Driven Sustainability",
+        "Track VI: Computer Science Applications in Climate Data and Weather Forecasting",
       items: [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Data-Driven Sustainability",
+        "Cloud computing platforms for climate data processing",
+        "Big data frameworks for environmental datasets",
+        "Data mining and visualization for weather patterns",
+        "AI/ML-based prediction systems for climate anomalies",
+        "Blockchain applications in environmental data integrity",
+        "Cybersecurity in climate and weather information systems",
+        "Software architectures for integrated climate information management",
       ],
     },
   ];

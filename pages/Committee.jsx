@@ -193,8 +193,8 @@ const Committee = () => {
       id: "committee14",
       name: "Local Organizing Committee, MSIT",
       members: [
-        { name: "Prof. Rinki Dwivedi" },
-        { name: "Dr. Ravi Chowdhary" },
+        { name: "Prof. Rinky Dwivedi" },
+        { name: "Dr. Ravi Choudhary" },
         { name: "Mr. Sushil Kumar" },
         { name: "Dr. Swati Malik" },
       ],

@@ -1,6 +1,5 @@
 import "../src/Main.css";
 import CountdownTimer from "../components/CountdownTimer";
-import oldLogo from "./oldLogo.jpg";
 import "react-slideshow-image/dist/styles.css";
 import { Zoom } from "react-slideshow-image";
 
@@ -93,7 +92,7 @@ const Main = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <img
-                    src={oldLogo}
+                    src="/2026Logo.png"
                     alt="Logo"
                     className="self-center w-60 object-contain ml-[-5%] rounded-full" // Adjust size here
                   />
