@@ -69,11 +69,12 @@ const Guide = () => {
                   </li>
                   <li className="py-2 font-bold">
                     Recent Patents on Engineering{" "}
-                    <span className="text-red-600">
+                    <span className="">
                       (Special Issue on Advances in Engineering Innovations and
                       Patents for Artificial Intelligence, Sustainability, and
                       Smart Systems)
                     </span>
+                    <span className="text-red-600">(Scopus)</span>
                   </li>
                   <li className="py-2 font-bold">
                     Proceedings on Engineering Sciences.{" "}
