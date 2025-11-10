@@ -81,7 +81,7 @@ const Main = () => {
                 <div>
                   <h1 className="font-semibold bg-gradient-to-t from-slate-900 to-slate-700 bg-clip-text text-transparent text-border event-title text-2xl sm:text-1xl md:text-2xl lg:text-3xl">
                     2
-                    <sup className="text-black outline-0 outline-width-0 stroke-0">
+                    <sup className="bg-gradient-to-t from-slate-900 to-slate-700 bg-clip-text text-transparent text-border">
                       nd
                     </sup>{" "}
                     National Conference on Recent Trends in Climate Change,
