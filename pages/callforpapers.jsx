@@ -14,7 +14,7 @@ const Cfp = () => {
               <div className="w-32 h-[4px] mx-auto bg-[#365372] rounded-xl mt-2 mb-4"></div>
               <div className="text-yellow-200">
                 {" "}
-                Submit by 10th December, 2025
+                Submit by 24th December, 2025
               </div>
             </h2>
           </header>
