@@ -115,17 +115,29 @@ const Tracks = () => {
     {
       id: "track7",
       title: "Track VII: Recycling, Reuse & Resource Recovery",
-      items: [],
+      items: [
+        "Advanced materials recovery (plastics, metals, e-waste)",
+        "Innovative recycling technologies (chemical, mechanical, thermal)",
+        "Water recycling & wastewater reclamation",
+      ],
     },
     {
       id: "track8",
       title: "Track VIII: Waste-to-Value Innovations",
-      items: [],
+      items: [
+        "Bioenergy from agricultural, municipal & industrial waste",
+        "Conversion of waste to fuels, chemicals & bioproducts",
+        "Startups, entrepreneurship & scalable waste-to-value models",
+      ],
     },
     {
       id: "track9",
       title: "Track IX: Lightning Science, Impacts & Safety Technologies",
-      items: [],
+      items: [
+        "Lightning detection, monitoring & prediction systems",
+        "Impacts of lightning on infrastructure, aviation & power systems",
+        "Lightning protection technologies & standards",
+      ],
     },
   ];
 
