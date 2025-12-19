@@ -2,11 +2,11 @@ const Cfp = () => {
   return (
     <div>
       {/* Placeholder Header for Smooth Scrolling */}
-      <div className="h-16 bg-white w-full"></div>
+      <div className="h-16 w-full"></div>
 
       {/* Main Content */}
       <div id="cfp" className="w-full text-white min-h-screen">
-        <div className="bg-gradient-to-t from-blue-400 to-blue-500 px-[8%] md:px-[15%] py-16 shadow-lg">
+        <div className="bg-gradient-to-t to-blue-400 from-blue-500 px-[8%] md:px-[15%] py-16 shadow-lg">
           {/* Submission Header */}
           <header className="text-center">
             <h2 className="text-[#c00000] text-2xl font-semibold uppercase tracking-wider mb-10">
@@ -43,7 +43,7 @@ const Cfp = () => {
           </section>
 
           {/* Conference Description */}
-          <article className="bg-white bg-opacity-10 p-6 rounded-lg shadow-md">
+          <article className="bg-white/10 p-6 rounded-lg shadow-md">
             <p className="text-justify text-md md:text-xl pt-3 pb-16 leading-relaxed">
               <strong>NCRTCES 2026</strong> aims to identify unresolved research
               issues related to climate, energy and sustainability and to

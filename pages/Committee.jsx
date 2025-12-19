@@ -78,25 +78,20 @@ const Committee = () => {
         { name: "Sh. Kaptan Singh (President) SMES, New Delhi" },
         { name: "Ms. Esha Jakhar, (Vice - President) SMES, New Delhi" },
         {
-          name: "Prof. Prem Vrat, (Pro - Chancellor) North Cap University, Gurgaon",
+          name: "Prof. Prem Vrat, (Chairman, Academic Committee) SMES, New Delhi",
         },
         {
           name: "Sh. Karnal Singh, (IPS) Former Director - Enforcement Directorate",
         },
-        { name: "Mr. Ajit Singh Chaudhary, (Secretary) SMES, New Delhi" },
-        { name: "Mr. Raj Pal Solanki, (Treasurer) SMES, New Delhi" },
-        {
-          name: "Dr. Tejbir Singh Rana, (Chairman, Academic Committee) SMES, New Delhi",
-        },
-        {
-          name: "Sh. S.S. Solanki (Chairman Disciplinary (L)) SMES, New Delhi",
-        },
+        { name: "Sh. Ajit Singh Chaudhary, (Secretary) SMES, New Delhi" },
+        { name: "Sh. Raj Pal Solanki, (Treasurer) SMES, New Delhi" },
+        { name: "Sh. S.S. Solanki (Joint Secretary) SMES, New Delhi" },
       ],
     },
     {
       id: "committee1",
       name: "Organising Chair",
-      members: [{ name: "Prof. (Dr.) Archana Balyan" }],
+      members: [{ name: "Prof. (Dr.) A.K. Srivastava" }],
     },
     {
       id: "committee2",

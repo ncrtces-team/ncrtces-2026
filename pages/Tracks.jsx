@@ -48,7 +48,7 @@ const Tracks = () => {
     },
     {
       id: "track2",
-      title: "Track II: Energy",
+      title: "Track II: Energy Efficiency and Conservation",
       items: [
         "Renewable and clean energy technologies",
         "Energy efficiency and conservation methods",
@@ -74,7 +74,7 @@ const Tracks = () => {
     },
     {
       id: "track4",
-      title: "Track IV: Sustainability",
+      title: "Track IV: Sustainability, Environment & Ecosystem Management",
       items: [
         "Sustainable development and low-carbon innovations",
         "Circular economy and waste management",
@@ -111,6 +111,21 @@ const Tracks = () => {
         "Cybersecurity in climate and weather information systems",
         "Software architectures for integrated climate information management",
       ],
+    },
+    {
+      id: "track7",
+      title: "Track VII: Recycling, Reuse & Resource Recovery",
+      items: [],
+    },
+    {
+      id: "track8",
+      title: "Track VIII: Waste-to-Value Innovations",
+      items: [],
+    },
+    {
+      id: "track9",
+      title: "Track IX: Lightning Science, Impacts & Safety Technologies",
+      items: [],
     },
   ];
 

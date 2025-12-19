@@ -8,6 +8,7 @@ import Guidelines from "../pages/guide";
 import Schedule from "../pages/Schedule";
 import Registration from "../pages/Registration";
 import CallForPapers from "../pages/callforpapers";
+import CallForSpecialSession from "../pages/callforspecialsession";
 import Contact from "../pages/Contact";
 import Venue from "../pages/Venue";
 // import Acknowledgements from "../pages/Acknowledgements";
@@ -23,6 +24,7 @@ export const PreAckApp = () => {
       <Tracks />
       <Committee />
       <CallForPapers />
+      <CallForSpecialSession />
       <Guidelines />
       <Schedule />
       <Registration />

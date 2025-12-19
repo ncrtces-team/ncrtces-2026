@@ -1,11 +1,29 @@
 const Keynote = () => {
   const speakers = [
-    //   {
-    //     img: imgUrl,
-    //     name: "Name to be Displayed",
-    //     title: 'Profession',
-    //     subtitle: 'Energy, Ministry of New and Renewable Energy',
-    //   },
+    {
+      img: "/jagvirSingh.jpg",
+      name: "Dr. Jagvir Singh",
+      title: "Scientist G",
+      subtitle: "Ministry of Earth Sciences, New Delhi",
+    },
+    {
+      img: "/manjuKhari.jpeg",
+      name: "Prof. Dr. Manju Khari",
+      title: "Professor",
+      subtitle: "School of Computer & Systems Sciences, JNU, Delhi",
+    },
+    {
+      img: "/vishalBhatnagar.jpeg",
+      name: "Dr. Vishal Bhatnagar",
+      title: "Professor and Head",
+      subtitle: "NSUT(East Campus), Delhi",
+    },
+    {
+      img: "/sachiNandan.jpeg",
+      name: "Dr.Sachi Nandan Mohanty",
+      title: "Professor",
+      subtitle: "School of CSE, VIT-AP University, Amaravati, AP, India",
+    },
   ];
 
   return (
@@ -24,7 +42,7 @@ const Keynote = () => {
                 <div key={index} className="text-center font-[700]">
                   <div className="w-[220px] h-[220px] mx-auto">
                     <img
-                      className="w-full h-full rounded-full object-stretch border-[4px] border-gray-500"
+                      className="w-full h-full object-cover rounded-full border-[4px] border-gray-500"
                       src={speaker.img}
                       alt={speaker.name}
                     />
