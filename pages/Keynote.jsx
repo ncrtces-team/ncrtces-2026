@@ -24,6 +24,12 @@ const Keynote = () => {
       title: "Professor",
       subtitle: "School of CSE, VIT-AP University, Amaravati, AP, India",
     },
+    {
+      img: "/manSingh.jpeg",
+      name: "Prof. Man Singh",
+      title: "Professor and Dean",
+      subtitle: "Central University of Gujarat",
+    },
   ];
 
   return (
