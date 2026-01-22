@@ -76,10 +76,6 @@ const Guide = () => {
                     </span>
                     <span className="text-red-600">(Scopus)</span>
                   </li>
-                  <li className="py-2 font-bold">
-                    Proceedings on Engineering Sciences.{" "}
-                    <span className="text-red-600">(Scopus)</span>
-                  </li>
                 </ul>
               </p>
               <p className="py-2">
