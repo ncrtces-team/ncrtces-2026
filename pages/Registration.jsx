@@ -1,3 +1,5 @@
+import CopyableField from "../components/copyable";
+
 const Registration = () => {
   return (
     <section id="reg">
@@ -11,8 +13,8 @@ const Registration = () => {
             <div className="w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl"></div>
             <div className="h-12 bg-white w-full"></div>
           </div>
-          <h2 className="text-center">To be announced soon...</h2>
-          {/* <br />
+          {/* <h2 className="text-center">To be announced soon...</h2> */}
+          <br />
           <div className="w-full max-w-3xl mx-auto">
             <div className="flex text-md md:text-xl text-white bg-blue-400 font-[500]">
               <div className="w-1/2 text-center py-3">Category</div>
@@ -22,7 +24,11 @@ const Registration = () => {
 
             {[
               { category: "Student/Research Scholar", fee: "1,500" },
-              { category: "Academic/Faculty", fee: "3,000", bg: "bg-[#e9e9e9]" },
+              {
+                category: "Academic/Faculty",
+                fee: "3,000",
+                bg: "bg-[#e9e9e9]",
+              },
               { category: "Industry/Delegates", fee: "5,000" },
               { category: "Attendees", fee: "1,000", bg: "bg-[#e9e9e9]" },
             ].map(({ category, fee, bg = "" }, index) => (
@@ -32,10 +38,12 @@ const Registration = () => {
                 <div className="w-1/2 text-center py-3">{fee}</div>
               </div>
             ))}
-            <p className="font-bold mt-5 text-lg">* The registration fees is non-refundable.</p>
+            <p className="font-bold mt-5 text-lg">
+              * The registration fees is non-refundable.
+            </p>
           </div>
 
-          <br />
+          {/* <br />
           <h2 className="text-xl pt-8 md:text-2xl font-semibold text-center text-[#c00000]">
             Author/Co-Author Registration Fee Includes:
           </h2>
@@ -57,7 +65,11 @@ const Registration = () => {
           </ul>
 
           <p className="text-md md:text-lg mt-6 font-semibold text-gray-800">
-            <span className="text-[#c00000] font-bold">Important:</span> Every accepted paper MUST have at least one author registered to the conference by the time the camera-ready paper is submitted for the paper to appear in the proceedings and be included in the Technical Program.
+            <span className="text-[#c00000] font-bold">Important:</span> Every
+            accepted paper MUST have at least one author registered to the
+            conference by the time the camera-ready paper is submitted for the
+            paper to appear in the proceedings and be included in the Technical
+            Program.
           </p>
 
           <div className="mt-16 bg-[#f9f9f9] p-6 rounded-xl shadow-md">
@@ -67,24 +79,41 @@ const Registration = () => {
             <div className="w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl"></div>
 
             <p className="text-md md:text-lg text-center mt-4">
-              Please use the following bank details to complete your registration payment:
+              Please use the following bank details to complete your
+              registration payment:
             </p>
 
             <div className="mt-6 p-4 bg-white rounded-lg shadow-sm border">
               {[
-                { label: "Account Holder", value: "Director, Maharaja Surajmal Institute of Technology" },
-                { label: "Address", value: "Maharaja Surajmal Institute, C4, Janakpuri, New Delhi - 110058" },
+                {
+                  label: "Account Holder",
+                  value: "Director, Maharaja Surajmal Institute of Technology",
+                },
+                {
+                  label: "Address",
+                  value:
+                    "Maharaja Surajmal Institute, C4, Janakpuri, New Delhi - 110058",
+                },
                 { label: "Bank Name", value: "Indian Overseas Bank" },
-                { label: "Branch Name With Complete Address", value: "C Block Janakpuri, Maharaja Surajmal Inst. Pharmacy & Tech, C-4, Janakpuri, New Delhi - 110058" },
+                {
+                  label: "Branch Name With Complete Address",
+                  value:
+                    "C Block Janakpuri, Maharaja Surajmal Inst. Pharmacy & Tech, C-4, Janakpuri, New Delhi - 110058",
+                },
                 { label: "IFSC", value: "IOBA0001759" },
                 { label: "Account Number", value: "175901000007113" },
               ].map((field, idx) => (
-                <CopyableField key={idx} label={field.label} value={field.value} />
+                <CopyableField
+                  key={idx}
+                  label={field.label}
+                  value={field.value}
+                />
               ))}
             </div>
             <img src={qr} alt="" srcset="" />
             <p className="text-md md:text-lg text-center font-medium mt-6">
-              Ensure to include your full name and registration category while making the payment.
+              Ensure to include your full name and registration category while
+              making the payment.
             </p>
           </div> */}
         </div>
