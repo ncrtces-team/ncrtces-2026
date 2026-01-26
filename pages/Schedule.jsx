@@ -24,14 +24,14 @@ const cfp = () => {
               Paper submission Deadline
             </div>
             <div className="w-1 h-auto border-r-2 border-[#e9e9e9]"></div>
-            <div className="w-1/2 text-center py-3">January 25, 2026</div>
+            <div className="w-1/2 text-center py-3">February 2, 2026</div>
           </div>
           <div className="flex text-md md:text-xl bg-[#e9e9e9]">
             <div className="w-1/2 text-center py-3">
               Notification of acceptance
             </div>
             <div className="w-1 h-auto border-r-2 border-white"></div>
-            <div className="w-1/2 text-center py-3">January 30, 2026</div>
+            <div className="w-1/2 text-center py-3">February 4, 2026</div>
           </div>
           <div className="flex text-md md:text-xl">
             <div className="w-1/2 text-center py-3">

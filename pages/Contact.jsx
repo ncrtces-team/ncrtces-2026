@@ -35,7 +35,7 @@ const Contact = () => {
               </div>
               <div className="text-center">
                 <h1 className="text-gray-400 text-[22px] font-[500] mt-4">
-                  011-45037193
+                  011-65215941
                 </h1>
                 {/* <h1 className="text-gray-400 text-[22px] font-[500]">
                   25528117

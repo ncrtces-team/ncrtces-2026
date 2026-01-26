@@ -20,7 +20,7 @@ const About = () => {
                   <strong className="tracking-wider">
                     Paper Submission Deadline :{" "}
                   </strong>
-                  December 24, 2025
+                  February 2, 2026
                 </p>
               </div>
               <div className="flex w-[500%] items-center">
@@ -33,7 +33,7 @@ const About = () => {
                   <strong className="tracking-wider">
                     Notification of acceptance :{" "}
                   </strong>
-                  January 19, 2026
+                  February 4, 2026
                 </p>
               </div>
               <div className="flex w-[500%] items-center">
@@ -46,7 +46,7 @@ const About = () => {
                   <strong className="tracking-wider">
                     Camera-Ready Submission :{" "}
                   </strong>
-                  January 30, 2026
+                  February 5, 2026
                 </p>
               </div>
               <div className="flex w-[250%] items-center">
