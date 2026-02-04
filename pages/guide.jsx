@@ -17,7 +17,10 @@ const Guide = () => {
               <p className="py-2 ">
                 {/* TODO: Link to be fixed */}
                 1. Paper must be in IEEE format.{" "}
-                <a className="text-blue-950 italic underline" href="#">
+                <a
+                  className="text-blue-950 italic underline"
+                  href="/conference-template-a4.docx"
+                >
                   Template
                 </a>
               </p>
