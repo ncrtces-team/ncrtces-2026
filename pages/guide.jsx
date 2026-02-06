@@ -71,6 +71,10 @@ const Guide = () => {
                     <span className="text-red-600 ">(Scopus)</span>
                   </li>
                   <li className="py-2 font-bold">
+                    International Journal for Quality Research(IJQR){" "}
+                    <span className="text-red-600 ">(ESCI)</span>
+                  </li>
+                  <li className="py-2 font-bold">
                     Recent Patents on Engineering{" "}
                     <span>
                       (Special Issue on Advances in Engineering Innovations and
