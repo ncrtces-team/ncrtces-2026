@@ -11,6 +11,7 @@ import CallForPapers from "../pages/callforpapers";
 import CallForSpecialSession from "../pages/callforspecialsession";
 import Contact from "../pages/Contact";
 import Venue from "../pages/Venue";
+import Sponsors from "../pages/Sponsors";
 // import Acknowledgements from "../pages/Acknowledgements";
 import Footer from "../components/footer";
 
@@ -28,6 +29,7 @@ export const PreAckApp = () => {
       <Guidelines />
       <Schedule />
       <Registration />
+      <Sponsors />
     </>
   );
 };

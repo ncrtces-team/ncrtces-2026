@@ -30,6 +30,7 @@ const pages = [
   { name: "Guidelines", sname: "guide" },
   { name: "Schedule", sname: "schedule" },
   { name: "Registration", sname: "reg" },
+  { name: "Sponsors", sname: "sponsors" },
   { name: "Acknowledgements", sname: "acknowledgements" },
   // { name: "Call For Special Session", sname: "call"},
   { name: "Contact Us", sname: "contact" },
@@ -107,7 +108,7 @@ function ResponsiveAppBar() {
       {
         // Threshold defines how much of the section should be visible for the callback to trigger
         threshold: 0.1, // 10% visibility triggers the callback (adjust this value as needed)
-      }
+      },
     );
 
     // Start observing the guide section
@@ -141,7 +142,7 @@ function ResponsiveAppBar() {
       {
         // Threshold defines how much of the section should be visible for the callback to trigger
         threshold: 0.1, // 10% visibility triggers the callback (adjust this value as needed)
-      }
+      },
     );
 
     // Start observing the guide section
@@ -213,8 +214,8 @@ function ResponsiveAppBar() {
                   page.sname !== "guide"
                     ? ForwardedScrollLink
                     : page.sname === "call"
-                    ? handleNew
-                    : ""
+                      ? handleNew
+                      : ""
                 }
                 to={page.sname !== "guide" ? page.sname : null}
                 spy={true}
@@ -224,14 +225,14 @@ function ResponsiveAppBar() {
                   page.sname === "about" || page.sname === "track"
                     ? 0
                     : page.sname === "reg" || page.sname === "schedule"
-                    ? -20
-                    : page.sname === "contact"
-                    ? -10
-                    : page.sname === "committee"
-                    ? -15
-                    : page.sname === "cfp"
-                    ? 0
-                    : -50
+                      ? -20
+                      : page.sname === "contact"
+                        ? -10
+                        : page.sname === "committee"
+                          ? -15
+                          : page.sname === "cfp"
+                            ? 0
+                            : -50
                 }
                 activeClass={page.sname !== "guide" ? "active" : ""}
                 // {...page.sname==="call" ? <Link to="https://github.com/"></Link>: ""}
