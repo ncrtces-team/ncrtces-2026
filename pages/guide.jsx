@@ -63,10 +63,6 @@ const Guide = () => {
                     JoVE Journal <span className="text-red-600">(SCIE)</span>
                   </li>
                   <li className="py-2 font-bold">
-                    MAPAN: Journal of Metrology Society of India{" "}
-                    <span className="text-red-600">(SCI)</span>
-                  </li>
-                  <li className="py-2 font-bold">
                     Proceedings on Engineering Sciences{" "}
                     <span className="text-red-600 ">(Scopus)</span>
                   </li>
