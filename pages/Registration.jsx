@@ -13,7 +13,9 @@ const Registration = () => {
             <div className="w-48 h-[3px] mx-auto mt-2 bg-[#365372] rounded-xl"></div>
             <div className="h-12 bg-white w-full"></div>
           </div>
-          {/* <h2 className="text-center">To be announced soon...</h2> */}
+          <h2 className="text-[#c00000] text-center text-2xl font-[600]">
+            Registrations are closed
+          </h2>
           <br />
           <div className="w-full max-w-3xl mx-auto">
             <div className="flex text-md md:text-xl text-white bg-blue-400 font-[500]">

@@ -85,14 +85,6 @@ const Guide = () => {
                 The papers submitted for the journals must be in the scope of
                 the Journals. The decision of the journal will be final.
                 <br />
-                8. All papers must be submitted via the link:{" "}
-                <a
-                  href="https://cmt3.research.microsoft.com/NCRTCES2026/Submission/Index"
-                  className="text-blue-200 break-words underline hover:text-blue-100"
-                >
-                  <br />
-                  https://cmt3.research.microsoft.com/NCRTCES2026/Submission/Index
-                </a>
               </p>
             </div>
           </div>
