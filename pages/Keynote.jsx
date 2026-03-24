@@ -1,16 +1,10 @@
 const Keynote = () => {
   const speakers = [
     {
-      img: "/jagvirSingh.jpg",
-      name: "Dr. Jagvir Singh",
-      title: "Scientist G",
-      subtitle: "Ministry of Earth Sciences, New Delhi",
-    },
-    {
-      img: "/manjuKhari.jpeg",
-      name: "Prof. Dr. Manju Khari",
-      title: "Professor",
-      subtitle: "School of Computer & Systems Sciences, JNU, Delhi",
+      img: "/pb.jpg",
+      name: "Dr. Palak Balyan",
+      title: "Research Lead",
+      subtitle: "Climate trends, New Delhi",
     },
     {
       img: "/vishalBhatnagar.jpeg",
